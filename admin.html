@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Barueri Basquete</title>
+  <link rel="stylesheet" href="css/jogosnbagamessub15.css">
+</head>
+<body>
+  <h1>Adicionar novo jogo</h1>
+  
+  <form id="form">
+    <input type="date" id="data" required><br>
+    <input type="text" id="local" placeholder="Local do jogo" required><br>
+    <input type="text" id="timeCasa" placeholder="Time da casa" required><br>
+    <input type="file" id="imgCasa" accept="image/*" required><br>
+    <input type="text" id="timeFora" placeholder="Time visitante" required><br>
+    <input type="file" id="imgFora" accept="image/*" required><br>
+    <input type="text" id="placar" placeholder="Placar (opcional)"><br>
+    <button type="submit">Adicionar Jogo</button>
+  </form>
+
+  <h2>Jogos Cadastrados</h2>
+  <div id="lista"></div> <!-- Aqui serão exibidos os jogos com botões de admin -->
+
+  <script src="JS/jogosnbagamessub15.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+main {
+    margin-top: 50px;
+}
+
+button {
+    background-color:#002244;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:#FFD700;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002244;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+header .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header .logo-escrita {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+.menu-container {
+    width: 100%;
+    background-color: #002244;
+    text-align: center;
+}
+
+/* Menu normal em telas grandes */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #002244;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+    color: #002244;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.btn {
+    background-color:#002244;
+    color: #FFD700;
+    text-decoration: none;
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+body {
+    text-align: center;
+    align-items: center;
+}
+
+/* Menu hambúrguer para telas menores */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.botoes-iframe {
+    display: flex;
+    flex-direction: row; /* AGORA NA HORIZONTAL */
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 200px;
+    flex-wrap: wrap; /* Se a tela for pequena, quebra */
+}
+
+.botoes-iframe button {
+    color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 150px;
+}
+
+.botoes-iframe button:hover {
+    color:aliceblue;
+}
+
+/* Área dos iframes */
+#iframe-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo dos iframes */
+#iframe-area iframe {
+    width: 90%;
+    max-width: 1000px;
+    height: 500px;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.tabela-jogos h2 {
+    color: #1a1a2e;
+}
+
+/* Tabela de jogos */
+.jogo-card {
+    background-color:#002244;
+    color: #fdb827;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 1200px; /* Ajustando a largura máxima */
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.jogo-info {
+    text-align: center;
+    flex: 1;
+}
+
+.equipe {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.equipe img {
+    width: 180px;
+    height: auto;
+    margin: 0 50px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .imagem {
+        width: 80%; /* Imagem maior em telas menores */
+        margin-bottom: 20px;
+    }
+
+    .iframes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iframe {
+        width: 80%; /* Iframes maiores em telas menores */
+        margin-bottom: 10px;
+    }
+}

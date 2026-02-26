@@ -1,0 +1,246 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002244;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header .logo-escrita {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+.menu-container {
+    width: 100%;
+    background-color: #002244;
+    text-align: center;
+}
+
+/* Menu normal em telas grandes */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #002244;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+    color: #002244;
+    text-decoration: none;
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+/* Menu hambúrguer para telas menores */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    background-color:#002244 ;
+    color: #FFD700;
+    text-decoration: none;
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+body {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.azul img {
+    width: 250px;
+    height: auto;
+}
+
+h2 {
+    color:#002244;
+    text-align: center;
+}
+h3 {
+    color: #002244;
+    text-align: center;
+}
+
+/* Roster da equipe */
+.roster-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.player-card {
+    width: 200px;
+    height: auto;  /* Ajusta a altura automaticamente para manter a proporção da imagem */
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+.player-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Isso faz a imagem ser exibida completamente sem corte */
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.modal-image-container {
+    flex: 0 0 70%;
+}
+
+.modal img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* Botão de fechar */
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #FFD700; /* Tornando o botão mais visível */
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #FF6347; /* Cor de destaque ao passar o mouse */
+}
+
+/* Informações do jogador */
+.player-info {
+    flex: 0 0 30%;
+    padding: 15px;
+    background-color: transparent;
+    color: #2c3e50;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-info h2 {
+    margin-bottom: 15px;
+    color: #1a237e;
+}
+
+.player-info p {
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: #002244;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #FFD700;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+    }
+}

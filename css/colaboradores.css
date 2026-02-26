@@ -1,0 +1,185 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002244;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+header .logo-escrita {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+.menu-container {
+    width: 100%;
+    background-color: #002244;
+    text-align: center;
+}
+
+/* Menu normal em telas grandes */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #002244;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+    color: #002244;
+    text-decoration: none;
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+/* Menu hambúrguer para telas menores */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo do corpo do site */
+body {
+    background-color: rgb(1, 42, 78);
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.branco img {
+    width: 250px;
+    height: auto;
+}
+
+h2 {
+    color:#ffffff;
+    text-align: center;
+}
+
+/* Estilos para as imagens - Ajustando para serem responsivas */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
+    gap: 50px; /* Espaçamento entre as imagens */
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 150%;
+    max-width: 300px; /* Define um tamanho máximo para telas grandes */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.saiba-mais-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+/* Responsividade para imagens menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: #002244;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #FFD700;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+    }
+    .image-container img {
+        max-width: 150px; /* Reduz o tamanho das imagens em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center; /* Centraliza as imagens */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Faz as imagens ocuparem toda a largura da tela */
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreBarueri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sub15.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="escrita">
+          <img src="Logos/barueri.jpg" alt="Logo Basquete Barueri" class="logo">
+          <img src="Logos/escrita basquete barueri amarelo.png" alt="basquete" class="logo-escrita">
+      </div>
+  </header>
+
+  <div class="menu-container">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="nav-menu">
+          <ul>
+            <li><a href="BarueriSite.html">Início</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="Social.html">Social</a></li>
+            <li><a href="Time.html">Time</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+            <li><a href="Escolas.html">Escolinhas</a></li>
+            <li><a href="Trofeus.html">Conquistas</a></li>
+            <li><a href="Colaboradores.html">Colaboradores</a></li>
+            <button class="btn btn-primary" onclick="history.back()">Voltar</button>
+          </ul>
+      </nav>
+  </div>
+
+  <div class="azul">
+    <img src="Logos/escrita basquete barueri azul.png" alt="basquete">
+</div>
+<h2>Equipe Sub-15:</h2>
+
+<div class="roster-container">
+    <div class="player-card" onclick="openModal('sub15/04.jpg', 'Kauã', '1.88m', '75kg', 'Ala', 'xx/xx/xxxx')">
+        <div class="img-container">
+            <img src="sub15/04card.jpg" alt="Jogador 1" class="img-fluid">
+        </div>
+    </div>
+    <div class="player-card" onclick="openModal('sub15/05.jpg', 'Wendel', '2.03m', '98kg', 'Pivô', 'xx/xx/xxxx')">
+        <div class="img-container">
+            <img src="sub15/05card.jpg" alt="Jogador 2" class="img-fluid">
+        </div>
+    </div>
+    <div class="player-card" onclick="openModal('sub15/06.jpg', 'Pedrinho', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')">
+        <div class="img-container">
+            <img src="sub15/06card.jpg" alt="Jogador 3" class="img-fluid">
+        </div>
+    </div>
+
+    <!--para adcionar jogadores so dar cntrl c + cntrl v neste codigo destacado pelo comentario-->
+    <div class="player-card" onclick="openModal('sub15/07.jpg', 'Lucas', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/07card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/08.jpg', 'Gustavo', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/08card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/09.jpg', 'Gabriel', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/09card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/10.jpg', 'Luca', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/10card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/11.jpg', 'Cayo', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/11card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/12.jpg', 'Crystian', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/12card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+		
+	<div class="player-card" onclick="openModal('sub15/13.jpg', 'Arthur', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/13card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/14.jpg', 'Nicholas', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/14card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/15.jpg', 'Eduardo', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/15card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/18.jpg', 'Felipe', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/18card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+	<div class="player-card" onclick="openModal('sub15/19.jpg', 'Bruno', '1.88m', '85kg', 'Armador', 'xx/xx/xxxx')"><!--para alterar a foto ao clicar voce tem que alterar o caminho para a foro nesta linda de codigo, ou seja vai escrever o caminho novamente: (nome da pasta onde ta a foto)+/+(nome do arquivo da foto)-->
+        <div class="img-container">
+            <img src="sub15/19card.jpg" alt="Jogador 3" class="img-fluid"> <!-- para mudar a foro mude o caminho do link para o nome do arquivo da foto que voce quer, como: "(nome da pasta onde esta a foto) + / + (nome do arquivo da foto)"-->
+        </div>
+    </div>
+	
+      <!--para adcionar jogadores so dar cntrl c + cntrl v neste codigo destacado pelo comentario-->
+</div>
+
+<!-- Modal -->
+<div class="modal" id="playerModal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div class="modal-image-container">
+            <img id="modalImage" src="" alt="Jogador">
+        </div>
+        <div class="player-info">
+            <h2 id="playerName"></h2>
+            <p id="playerStats"></p>
+        </div>
+    </div>
+</div>
+<script src="JS/timesub15.js"></script> <!-- Código JavaScript -->
+<script>
+function toggleMenu() {
+    var nav = document.getElementById("nav-menu");
+    nav.classList.toggle("active");
+}
+</script>
+</body>
+</html>
